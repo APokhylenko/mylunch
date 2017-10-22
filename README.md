@@ -14,13 +14,31 @@ This is a simple Django - Vue project for collective food order.
 
 ## How to install
 
-
+To install backend:
 ```bash
-$ 
-$
-$
+$ create virtual env
+$ git clone https://github.com/APokhylenko/mylunch.git
+$ cd mylunch/backend
+$ pip install -r req.txt
+$ mv example.env .env
 ```
-**Note**: take a look at template used in this project [template](https://github.com/jpadilla/django-project-template)
+- open .env and add 'SECRET_KEY'
+- setup database and add database url to .env 'DATABASES' 
+						OR
+- or you can use sqlite - just uncomment it in settings
+```bash
+$ python manage.py migrate
+$ python manage.py createsuperuser
+$ python manage.py runserver
+```
+To install frontend:
+- open new terminal window
+```bash
+$ cd ./frontend
+$ npm install
+$ npm run dev
+```
+**Note**: take a look at [template](https://github.com/jpadilla/django-project-template) used in this project 
 
 ## Environment variables
 
@@ -34,4 +52,5 @@ DJANGO_DEBUG='yes'
 
 
 ## License
+MIT
 
