@@ -23,9 +23,9 @@ $ pip install -r req.txt
 $ mv example.env .env
 ```
 - open .env and add 'SECRET_KEY'
-- setup database and add database url to .env 'DATABASES' 
+- setup database and add DATABASE_URL to .env
 						OR
-- or you can use sqlite - just uncomment it in settings
+ or you can use sqlite - just uncomment it in settings
 ```bash
 $ python manage.py migrate
 $ python manage.py createsuperuser
