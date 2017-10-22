@@ -40,16 +40,11 @@ $ npm run dev
 ```
 **Note**: take a look at [template](https://github.com/jpadilla/django-project-template) used in this project 
 
-## Environment variables
-
-These are common between environments. The `ENVIRONMENT` variable loads the correct settings, possible values are: `DEVELOPMENT`, `STAGING`, `PRODUCTION`.
-
-```
-ENVIRONMENT='DEVELOPMENT'
-DJANGO_SECRET_KEY='dont-tell-eve'
-DJANGO_DEBUG='yes'
-```
-
+## Usage
+- Add first and last names to superuser.
+- Upload test data from 'static' folder.
+- Add products
+- order lunch :) 
 
 ## License
 MIT
